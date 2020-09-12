@@ -1,5 +1,5 @@
 # ipfind
-This uses ipapi.co's api to get the domain information.
+Gets the infomration of the users ip info and map.
 
 support me from here.
 
