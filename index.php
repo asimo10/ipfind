@@ -55,12 +55,12 @@
         echo $loc;
         echo "\r\n";
         echo "-----------------------------------------------";
-        echo "| Click <a href='/map' target='_blank'>Here</a> for Map."
-        echo "| <a href='/legal/privacy-policy/'>Privacy Policy</a>"
-        echo "| <a href='/legal/terms-of-use/'>Terms of Use</a>"
-        echo "| <a href='/' target='_blank'>Help</a>"
-        echo "| <a href='/about/'>About</a>"
-        echo "| Made by <a href='https://github.com/asimo10'>Asimo10</a>"
+        echo "| Click <a href='/map' target='_blank'>Here</a> for Map.";
+        echo "| <a href='/legal/privacy-policy/'>Privacy Policy</a>";
+        echo "| <a href='/legal/terms-of-use/'>Terms of Use</a>";
+        echo "| <a href='/' target='_blank'>Help</a>";
+        echo "| <a href='/about/'>About</a>";
+        echo "| Made by <a href='https://github.com/asimo10'>Asimo10</a>";
         ?>
         </pre>
         </code>
