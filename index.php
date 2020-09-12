@@ -47,7 +47,7 @@
         echo "| Your ip is: ".$ip." (ipv4)";    //tell your ip
         echo "\r\n";
         echo "| The date and time now is: ".$date;
-        $loc = file_get_contents('http://ip-api.com/xml/'.$ip);
+        $loc = file_get_contents('http://ip-api.com/json/'.$ip);
         $loc = str_replace('<?xml version="1.0" encoding="UTF-8"?>', '', $loc);
         $loc = str_replace('<', '&lt;', $loc);
         $loc = str_replace('>', '&gt;', $loc);
