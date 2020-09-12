@@ -56,7 +56,7 @@ text-rendering: optimizeSpeed;
 ?>
 <div id="ipinfo">
 <?php
-        $loc = file_get_contents('https://ipapi.co/'.$ip.'/xml');
+        $loc = file_get_contents('https://ipapi.co/'.$ip.'/json');
         $loc = str_replace('<', '&lt;', $loc);
         $loc = str_replace('>', '&gt;', $loc);
         $loc = str_replace('/root&gt;', '/root&gt; <br> ', $loc);
@@ -65,7 +65,7 @@ text-rendering: optimizeSpeed;
         $loc = str_replace('/region&gt;', '/region&gt; <br> ', $loc);
         $loc = str_replace('/region_code&gt;', '/region_code&gt; <br> ', $loc);
         $loc = str_replace('/country&gt;', '/country&gt; <br> ', $loc);
-        echo '<?xml version="1.0" encoding="utf-8"?>';
+        $loc = str_replace('/country&gt;', '/country&gt; <br> ', $loc);
         echo $loc;
 ?>
 </div></pre><br>
