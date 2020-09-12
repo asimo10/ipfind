@@ -60,7 +60,9 @@ text-rendering: optimizeSpeed;
         $loc = str_replace('<?xml version="1.0" encoding="UTF-8"?>', '', $loc);
         $loc = str_replace('<', '&lt;', $loc);
         $loc = str_replace('>', '&gt;', $loc);
+        echo "-----------------------------------------------";
         echo $loc;
+        echo "-----------------------------------------------";
 ?>
 </div></pre><br>
 | Click <a href="/map" target="_blank">Here</a> for Map. 
