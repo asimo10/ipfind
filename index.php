@@ -57,6 +57,7 @@ text-rendering: optimizeSpeed;
 <div id="ipinfo">
 <?php
         $loc = file_get_contents('http://ip-api.com/xml/'.$ip);
+        $loc = str_replace('<?xml version="1.0" encoding="UTF-8"?>', '', $loc);
         $loc = str_replace('<', '&lt;', $loc);
         $loc = str_replace('>', '&gt;', $loc);
         echo $loc;
