@@ -52,6 +52,8 @@
         $loc = str_replace('<', '&lt;', $loc);
         $loc = str_replace('>', '&gt;', $loc);
         $loc = str_replace('  &lt;', '|  &lt;', $loc);
+        $loc = str_replace('&lt;query&gt;', '|&lt;query&gt;', $loc);
+        $loc = str_replace('&lt;/query&gt;', '|&lt;/query&gt;', $loc);
         echo "\r\n";
         echo "-----------------------------------------------";
         echo $loc;
