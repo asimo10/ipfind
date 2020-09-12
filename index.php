@@ -54,13 +54,13 @@ text-rendering: optimizeSpeed;
         echo " (ipv4)";
         echo "| The date and time now is: ".$date;
 ?>
-<div id="ipinfo"><textarea>
+<div id="ipinfo"></pre><textarea>
 <?php
         $loc = file_get_contents('https://ipapi.co/'.$ip.'/json');
-        $loc = str_replace('>', '><br>', $loc);
+        echo '<?xml version="1.0" encoding="utf-8"?>';
         echo $loc;
 ?>
-</textarea></div></pre><br>
+</textarea></div><br>
 | Click <a href="/map" target="_blank">Here</a> for Map. 
 | <a href="/legal/privacy-policy/">Privacy Policy</a>
 | <a href="/legal/terms-of-use/">Terms of Use</a>
