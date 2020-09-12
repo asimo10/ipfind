@@ -44,8 +44,8 @@
         echo "\r\n";
         echo "|       |_|                          ";
         echo "\r\n";
-        echo "| Your ip is: ".$ip;    //tell your ip
-        echo " (ipv4)";
+        echo "| Your ip is: ".$ip." (ipv4)";    //tell your ip
+        echo "\r\n";
         echo "| The date and time now is: ".$date;
         $loc = file_get_contents('http://ip-api.com/xml/'.$ip);
         $loc = str_replace('<?xml version="1.0" encoding="UTF-8"?>', '', $loc);
@@ -58,7 +58,9 @@
         echo "-----------------------------------------------";
         echo "\r\n";
         echo "| <a href='/legal/privacy-policy/'>Privacy Policy</a>";
+        echo "\r\n";
         echo "| <a href='/legal/terms-of-use/'>Terms of Use</a>";
+        echo "\r\n";
         echo "| Made by <a href='https://github.com/asimo10'>Asimo10</a>";
         ?>
         </pre>
