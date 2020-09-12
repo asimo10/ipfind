@@ -56,7 +56,7 @@ text-rendering: optimizeSpeed;
 ?>
 <div id="ipinfo">
 <?php
-        $loc = readfile('https://ipapi.co/'.$ip.'/xml');
+        $loc = file_get_contents('https://ipapi.co/'.$ip.'/xml');
         echo $loc;
 ?>
 </div></pre><br>
