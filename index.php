@@ -53,7 +53,8 @@
         $loc = str_replace(',', ',<br>', $loc);
         $loc = str_replace('{', '|{', $loc);
         $loc = str_replace('}', '|}', $loc);
-        $loc = str_replace(',I', ',I', $loc);
+        $loc = str_replace(',
+ Inc.', ',Inc.', $loc);
         echo "\r\n";
         echo "|-----------------------------------------------";
         echo $loc;
