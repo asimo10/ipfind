@@ -55,10 +55,10 @@
         $loc = str_replace('&lt;query&gt;', '|&lt;query&gt;', $loc);
         $loc = str_replace('&lt;/query&gt;', '|&lt;/query&gt;', $loc);
         echo "\r\n";
-        echo "-----------------------------------------------";
+        echo "|-----------------------------------------------";
         echo $loc;
         echo "\r\n";
-        echo "-----------------------------------------------";
+        echo "|-----------------------------------------------";
         echo "\r\n";
         echo "| <a href='/legal/privacy-policy/'>Privacy Policy</a>";
         echo "\r\n";
