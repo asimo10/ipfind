@@ -31,9 +31,7 @@ text-rendering: optimizeSpeed;
     {
         $ip = $_SERVER['REMOTE_ADDR'];
     }
-        date_default_timezone_set('Asia/Tokyo');  //set timezone to japan
         $date = date('Y-m-d H:i:s');                 //2012-03-06 17:33:07
-        $line_break = "\r\n";    //break line value
 ?>
 <pre><?php
         echo "|  _____       ______ _           _  ";
@@ -67,16 +65,7 @@ text-rendering: optimizeSpeed;
 | <a href="/legal/terms-of-use/">Terms of Use</a>
 | <a href="/" target="_blank">Help</a>
 | <a href="/about/">About</a>
-<?php
-        echo "| Made by Asimo10";
-        $file = 'log/log.txt';  //this is the file to which the IP address will be written; name it your way.
-        $fp = fopen($file, 'a'); //open file
-        fwrite($fp, $line_break);
-        fwrite($fp, $ip . $line_break);  //write ip 
-        fwrite($fp, $date . $line_break);       //write date
-        fwrite($fp, "--------------------");   //separate       
-        fclose($fp);          //close .txt
-?>
+| Made by <a href="https://github.com/asimo10">Asimo10</a>
         </code>
     </body>
 </html>
