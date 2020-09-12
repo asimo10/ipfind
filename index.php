@@ -55,11 +55,11 @@ text-rendering: optimizeSpeed;
         echo "| The date and time now is: ".$date;
 ?>
 <div id="ipinfo"><textarea>
-<pre><?php
-        $loc = file_get_contents('https://ipapi.co/'.$ip.'/xml');
+<?php
+        $loc = file_get_contents('https://ipapi.co/'.$ip.'/json');
         $loc = str_replace('>', '><br>', $loc);
         echo $loc;
-?></pre>
+?>
 </textarea></div></pre><br>
 | Click <a href="/map" target="_blank">Here</a> for Map. 
 | <a href="/legal/privacy-policy/">Privacy Policy</a>
