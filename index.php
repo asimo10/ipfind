@@ -65,6 +65,7 @@ text-rendering: optimizeSpeed;
         $loc = str_replace('/region&gt;', '/region&gt; <br> ', $loc);
         $loc = str_replace('/region_code&gt;', '/region_code&gt; <br> ', $loc);
         $loc = str_replace('/country&gt;', '/country&gt; <br> ', $loc);
+        echo "<?xml version="1.0" encoding="utf-8"?>";
         echo $loc;
 ?>
 </div></pre><br>
