@@ -59,7 +59,12 @@ text-rendering: optimizeSpeed;
         $loc = file_get_contents('https://ipapi.co/'.$ip.'/xml');
         $loc = str_replace('<', '&lt;', $loc);
         $loc = str_replace('>', '&gt;', $loc);
-        $loc = str_replace('&gt;', '&gt; <br> ', $loc);
+        $loc = str_replace('/root&gt;', '/root&gt; <br> ', $loc);
+        $loc = str_replace('/ip&gt;', '/ip&gt; <br> ', $loc);
+        $loc = str_replace('/city&gt;', '/city&gt; <br> ', $loc);
+        $loc = str_replace('/region&gt;', '/region&gt; <br> ', $loc);
+        $loc = str_replace('/region_code&gt;', '/region_code&gt; <br> ', $loc);
+        $loc = str_replace('/country&gt;', '/country&gt; <br> ', $loc);
         echo $loc;
 ?>
 </div></pre><br>
