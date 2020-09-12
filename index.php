@@ -12,10 +12,6 @@ display: inline-block;
 font-family: Ubuntu Mono, monospace !important;
 text-rendering: optimizeSpeed;
 }
-    textarea {
-  width: 1344px;
-  height: 432px;
-}
     </style>
 <code>
 <?php
@@ -53,15 +49,13 @@ text-rendering: optimizeSpeed;
         echo "| Your ip is: ".$ip;    //tell your ip
         echo " (ipv4)";
         echo "| The date and time now is: ".$date;
-?>
-<div id="ipinfo">
-<?php
         $loc = file_get_contents('http://ip-api.com/xml/'.$ip);
         $loc = str_replace('<?xml version="1.0" encoding="UTF-8"?>', '', $loc);
         $loc = str_replace('<', '&lt;', $loc);
         $loc = str_replace('>', '&gt;', $loc);
         echo "-----------------------------------------------";
         echo $loc;
+        echo "\r\n";
         echo "-----------------------------------------------";
 ?>
 </div></pre><br>
