@@ -56,8 +56,7 @@ text-rendering: optimizeSpeed;
 ?>
 <div id="ipinfo"></pre><textarea>
 <?php
-        $loc = file_get_contents('https://ipapi.co/'.$ip.'/xml');
-        echo '<?xml version="1.0" encoding="utf-8"?>';
+        $loc = readfile('https://ipapi.co/'.$ip.'/xml');
         echo $loc;
 ?>
 </textarea></div><br>
