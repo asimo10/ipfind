@@ -7,14 +7,14 @@
     <body>
     <style>
     @import url("https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono|Ubuntu+Mono|Cutive+Mono");
-pre{
-display: inline-block;
-font-family: Ubuntu Mono, monospace !important;
-text-rendering: optimizeSpeed;
-}
+    pre{
+    display: inline-block;
+    font-family: Ubuntu Mono, monospace !important;
+    text-rendering: optimizeSpeed;
+    }
     </style>
-<code>
-<?php
+    <code>
+    <pre><?php
       if (!empty($_SERVER['HTTP_CLIENT_IP']))   //check ip from share internet
     {
         $ip = $_SERVER['HTTP_CLIENT_IP'];
@@ -28,8 +28,6 @@ text-rendering: optimizeSpeed;
         $ip = $_SERVER['REMOTE_ADDR'];
     }
         $date = date('Y-m-d H:i:s');                 //2012-03-06 17:33:07
-?>
-<pre><?php
         echo "|  _____       ______ _           _  ";
         echo "\r\n";
         echo "| |_   _|     |  ____(_)         | | ";
@@ -57,14 +55,14 @@ text-rendering: optimizeSpeed;
         echo $loc;
         echo "\r\n";
         echo "-----------------------------------------------";
-?>
-</div></pre><br>
-| Click <a href="/map" target="_blank">Here</a> for Map. 
-| <a href="/legal/privacy-policy/">Privacy Policy</a>
-| <a href="/legal/terms-of-use/">Terms of Use</a>
-| <a href="/" target="_blank">Help</a>
-| <a href="/about/">About</a>
-| Made by <a href="https://github.com/asimo10">Asimo10</a>
+        echo "| Click <a href='/map' target='_blank'>Here</a> for Map."
+        echo "| <a href='/legal/privacy-policy/'>Privacy Policy</a>"
+        echo "| <a href='/legal/terms-of-use/'>Terms of Use</a>"
+        echo "| <a href='/' target='_blank'>Help</a>"
+        echo "| <a href='/about/'>About</a>"
+        echo "| Made by <a href='https://github.com/asimo10'>Asimo10</a>"
+        ?>
+        </pre>
         </code>
     </body>
 </html>
