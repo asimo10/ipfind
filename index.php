@@ -55,6 +55,7 @@
         $loc = str_replace('}', '|}', $loc);
         $loc = str_replace('<br> ', '', $loc);
         $loc = str_replace(',<br>', ',<br>|', $loc);
+        $loc = str_replace('{<br>', '{<br>|', $loc);
         echo "\r\n";
         echo "|-----------------------------------------------";
         echo $loc;
