@@ -56,7 +56,7 @@ text-rendering: optimizeSpeed;
 ?>
 <div id="ipinfo">
 <?php
-        $loc = file_get_contents('https://ipapi.co/'.$ip.'/json');
+        $loc = file_get_contents('http://ip-api.com/json/'.$ip);
         $loc = str_replace('<', '&lt;', $loc);
         $loc = str_replace('>', '&gt;', $loc);
         $loc = str_replace('/root&gt;', '/root&gt; <br> ', $loc);
