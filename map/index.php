@@ -17,8 +17,8 @@ if (!empty($_SERVER['HTTP_CLIENT_IP']))   //check ip from share internet
     {
         $ip = $_SERVER['REMOTE_ADDR'];
     }
-        $lat = file_get_contents('https://ipapi.co/' . $ip . '/latitude/');
-        $long = file_get_contents('https://ipapi.co/' . $ip . '/longitude/');
+        $lat = file_get_contents('http://ip-api.com/csv/'.$ip.'/?fields=lat');
+        $long = file_get_contents('http://ip-api.com/csv/'.$ip.'/?fields=lon');
         $map = file_get_contents('https://nominatim.openstreetmap.org/reverse.php?format=html&lat='.$lat.'&lon='.$long.'&zoom=18');
         echo $map;
 ?>
