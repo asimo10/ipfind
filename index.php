@@ -56,6 +56,8 @@
         $loc = str_replace('&lt;/query&gt;', '|&lt;/query&gt;', $loc);
         $loc = str_replace('|&lt;query&gt;'.$ip, '&lt;query&gt;'.$ip, $loc);
         $loc = str_replace('|'.$ip.'&lt;/query&gt;', $ip.'&lt;/query&gt;', $loc);
+        $loc = str_replace('&lt;/', '   &lt;/', $loc);
+        $loc = str_replace('&gt;', '&gt;    ', $loc);
         echo "\r\n";
         echo "|-----------------------------------------------";
         echo $loc;
