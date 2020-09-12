@@ -51,10 +51,12 @@
         $loc = str_replace('<?xml version="1.0" encoding="UTF-8"?>', '', $loc);
         $loc = str_replace('<', '&lt;', $loc);
         $loc = str_replace('>', '&gt;', $loc);
+        echo "\r\n";
         echo "-----------------------------------------------";
         echo $loc;
         echo "\r\n";
         echo "-----------------------------------------------";
+        echo "\r\n";
         echo "| Click <a href='/map' target='_blank'>Here</a> for Map.";
         echo "| <a href='/legal/privacy-policy/'>Privacy Policy</a>";
         echo "| <a href='/legal/terms-of-use/'>Terms of Use</a>";
