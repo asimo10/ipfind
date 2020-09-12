@@ -59,6 +59,7 @@ text-rendering: optimizeSpeed;
         $loc = file_get_contents('https://ipapi.co/'.$ip.'/xml');
         $loc = str_replace('<', '&lt;', $loc);
         $loc = str_replace('>', '&gt;', $loc);
+        $loc = str_replace('&gt;', '&gt; <br> ', $loc);
         echo $loc;
 ?>
 </div></pre><br>
