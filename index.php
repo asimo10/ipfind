@@ -67,8 +67,7 @@
         echo "| <a href='/legal/terms-of-use/'>Terms of Use</a>";
         echo "\r\n";
         echo "| Made by <a href='https://github.com/asimo10'>Asimo10</a>";
-        ?>
-        </pre>
+        ?></pre>
         </code>
     </body>
 </html>
