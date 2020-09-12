@@ -48,16 +48,8 @@
         echo "\r\n";
         echo "| The date and time now is: ".$date;
         $loc = file_get_contents('http://ip-api.com/json/'.$ip);
-        $loc = str_replace('<?xml version="1.0" encoding="UTF-8"?>', '', $loc);
-        $loc = str_replace('<', '&lt;', $loc);
-        $loc = str_replace('>', '&gt;', $loc);
-        $loc = str_replace('  &lt;', '|  &lt;', $loc);
-        $loc = str_replace('&lt;query&gt;', '|&lt;query&gt;', $loc);
-        $loc = str_replace('&lt;/query&gt;', '|&lt;/query&gt;', $loc);
-        $loc = str_replace('|&lt;query&gt;'.$ip, '&lt;query&gt;'.$ip, $loc);
-        $loc = str_replace('|'.$ip.'&lt;/query&gt;', $ip.'&lt;/query&gt;', $loc);
-        $loc = str_replace('&lt;/', '   &lt;/', $loc);
-        $loc = str_replace('&gt;', '&gt;    ', $loc);
+        $loc = str_replace('{', '<br>{', $loc);
+        $loc = str_replace(',', ',<br>', $loc);
         echo "\r\n";
         echo "|-----------------------------------------------";
         echo $loc;
