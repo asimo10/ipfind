@@ -7,14 +7,14 @@
     <body>
     <style>
     @import url("https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono|Ubuntu+Mono|Cutive+Mono");
-    p{
+    pre{
     display: inline-block;
     font-family: Ubuntu Mono, monospace !important;
     text-rendering: optimizeSpeed;
     }
     </style>
     <code>
-    <p><?php
+    <pre><?php
       if (!empty($_SERVER['HTTP_CLIENT_IP']))   //check ip from share internet
     {
         $ip = $_SERVER['HTTP_CLIENT_IP'];
@@ -82,7 +82,7 @@
         echo "| <a href='/legal/terms-of-use/'>Terms of Use</a>";
         echo "\r\n";
         echo "| Made by <a href='https://github.com/asimo10'>Asimo10</a>";
-        ?></p>
+        ?></pre>
         </code>
     </body>
 </html>
