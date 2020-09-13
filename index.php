@@ -51,7 +51,7 @@
         echo "|-----------------------------------------------";
         echo "\r\n";
         echo "<form action='index.php' method='post' autocomplete='off'>";
-        echo "|      IP <input type='text' name='ip'/>";
+        echo "| IP <input type='text' name='ip'/>";
         echo "      <input type='submit' value='Search'/>";
         echo "</form>";
         if (isset($_POST['ip']) && !empty($_POST['ip'])) {
