@@ -7,14 +7,14 @@
     <body>
     <style>
     @import url("https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono|Ubuntu+Mono|Cutive+Mono");
-    pre{
+    span{
     display: inline-block;
     font-family: Ubuntu Mono, monospace !important;
     text-rendering: optimizeSpeed;
     }
     </style>
     <code>
-    <pre><?php
+    <span><?php
       if (!empty($_SERVER['HTTP_CLIENT_IP']))   //check ip from share internet
     {
         $ip = $_SERVER['HTTP_CLIENT_IP'];
@@ -28,37 +28,40 @@
         $ip = $_SERVER['REMOTE_ADDR'];
     }
         $date = date('Y-m-d H:i:s');                 //2012-03-06 17:33:07
-        echo "|  _____       ______ _           _  ";
-        echo "\r\n";
-        echo "| |_   _|     |  ____(_)         | | ";
-        echo "\r\n";
-        echo "|   | |  _ __ | |__   _ _ __   __| | ";
-        echo "\r\n";
-        echo "|   | | | '_ \|  __| | | '_ \ / _` | ";
-        echo "\r\n";
-        echo "|  _| |_| |_) | |    | | | | | (_| | ";
-        echo "\r\n";
-        echo "| |_____| .__/|_|    |_|_| |_|\__,_| ";
-        echo "\r\n";
-        echo "|       | |                          ";
-        echo "\r\n";
-        echo "|       |_|                          ";
-        echo "\r\n";
+        ?>
+        |  _____       ______ _           _  
+        <br>
+        | |_   _|     |  ____(_)         | | 
+        <br>
+        |   | |  _ __ | |__   _ _ __   __| | 
+        <br>
+        |   | | | '_ \|  __| | | '_ \ / _` | 
+        <br>
+        |  _| |_| |_) | |    | | | | | (_| | 
+        <br>
+        | |_____| .__/|_|    |_|_| |_|\__,_| 
+        <br>
+        |       | |                          
+        <br>
+        |       |_|                          
+        <br>
+        <?php
         echo "| Your ip is: ".$ip." (ipv4)";    //tell your ip
         echo "\r\n";
         echo "| The date and time now is: ".$date;
-        echo "\r\n";
-        echo "|-----------------------------------------------";
-        echo "\r\n";
-        echo "<form action='index.php' method='post' autocomplete='off'>";
-        echo "| IP <input type='text' name='ip'/>";
-        echo "      <input type='submit' value='Search'/>";
-        echo "</form>";
+        ?>
+        <br>
+        |-----------------------------------------------";
+        <br>
+        <form action='index.php' method='post' autocomplete='off'>
+        | IP <input type='text' name='ip'/>
+              <input type='submit' value='Search'/>
+        </form>
+        <?php
         if (isset($_POST['ip']) && !empty($_POST['ip'])) {
             $ip = $_POST['ip'];
         }
         else {
-            
         }
         $loc = file_get_contents('http://ip-api.com/json/'.$ip);
         $loc = str_replace('{', '<br>{<br>', $loc);
@@ -79,7 +82,7 @@
         echo "| <a href='/legal/terms-of-use/'>Terms of Use</a>";
         echo "\r\n";
         echo "| Made by <a href='https://github.com/asimo10'>Asimo10</a>";
-        ?></pre>
+        ?></span>
         </code>
     </body>
 </html>
