@@ -54,15 +54,12 @@
         echo "      IP <input type='text' name='ip'/>";
         echo "      <input type='submit' value='Search'/>";
         echo " </form>";
-        echo "1".$ip;
-        echo "\r\n";
         if (isset($_POST['ip']) && !empty($_POST['ip'])) {
             $ip = $_POST['ip'];
         }
         else {
             
         }
-        echo "2".$ip;
         $loc = file_get_contents('http://ip-api.com/json/'.$ip);
         $loc = str_replace('{', '<br>{<br>', $loc);
         $loc = str_replace('}', '<br>}', $loc);
