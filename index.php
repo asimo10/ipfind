@@ -13,6 +13,40 @@
     text-rendering: optimizeSpeed;
     }
     </style>
+    <script>
+        function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+
+    document.getElementById('time').innerHTML =
+
+    h + ":" + m + ":" + s;
+
+    var
+    t = setTimeout(startTime, 500);
+    n = new Date();
+    y = n.getFullYear();
+    m = n.getMonth() + 1;
+    d = n.getDate();
+
+    document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+
+}
+
+function checkTime(i) {
+    if (i < 10) {
+        i = "0" + i
+    }
+    return i;
+}
+setInterval(() => {
+		document.title = new Date().toLocaleTimeString();
+		}, 1);
+    </script>
     <code>
     <pre><?php
       if (!empty($_SERVER['HTTP_CLIENT_IP']))   //check ip from share internet
@@ -46,7 +80,7 @@
         echo "\r\n";
         echo "| Your ip is: ".$ip." (ipv4)";    //tell your ip
         echo "\r\n";
-        echo "| The date and time now is: ".$date;
+        echo "| The date and time now is <div id='date'></div><div id='time'></div>";
         echo "\r\n";
         echo "|-----------------------------------------------";
         echo "\r\n";
