@@ -3,6 +3,7 @@
 <head>
 <link rel="icon" href="https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/0b/43/c6/0b43c698-fdde-0599-06c0-ac35afd3d496/AppIcon-1x_U007emarketing-0-7-0-85-220.png/246x0w.png">
 <title>IpFind</title>
+<script language="JavaScript" src="script.js" async></script>
 </head>
     <body>
     <style>
@@ -13,31 +14,6 @@
     text-rendering: optimizeSpeed;
     }
     </style>
-    <script>
-    function startTime() {
-    var today = new Date();
-    var h = today.getHours();
-    var m = today.getMinutes();
-    var s = today.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s);
-    document.getElementById('time').innerHTML =
-    h + ":" + m + ":" + s;
-    var
-    t = setTimeout(startTime, 500);
-    n = new Date();
-    y = n.getFullYear();
-    m = n.getMonth() + 1;
-    d = n.getDate();
-    document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
-}
-function checkTime(i) {
-    if (i < 10) {
-        i = "0" + i
-    }
-    return i;
-}
-    </script>
     <code>
     <pre><?php
       if (!empty($_SERVER['HTTP_CLIENT_IP']))   //check ip from share internet
