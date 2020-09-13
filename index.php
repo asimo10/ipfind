@@ -67,6 +67,10 @@
         echo "| <a href='/legal/terms-of-use/'>Terms of Use</a>";
         echo "\r\n";
         echo "| Made by <a href='https://github.com/asimo10'>Asimo10</a>";
+        echo " <form action='index.php' method='post' autocomplete='off'>";
+        echo "    <p>URL <br><input type='text' class='button' name='url'/></p>";
+        echo "    <p><input type='submit' class='button' value='Search'/></p>";
+        echo " </form>"
         ?></pre>
         </code>
     </body>
