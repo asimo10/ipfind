@@ -50,10 +50,10 @@
         echo "\r\n";
         echo "|-----------------------------------------------";
         echo "\r\n";
-        echo " <form action='index.php' method='post' autocomplete='off'>";
-        echo "      IP <input type='text' name='ip'/>";
+        echo "<form action='index.php' method='post' autocomplete='off'>";
+        echo "|      IP <input type='text' name='ip'/>";
         echo "      <input type='submit' value='Search'/>";
-        echo " </form>";
+        echo "</form>";
         if (isset($_POST['ip']) && !empty($_POST['ip'])) {
             $ip = $_POST['ip'];
         }
