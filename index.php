@@ -28,36 +28,32 @@
         $ip = $_SERVER['REMOTE_ADDR'];
     }
         $date = date('Y-m-d H:i:s');                 //2012-03-06 17:33:07
-        ?>
-        |  _____       ______ _           _  
-        <br>
-        | |_   _|     |  ____(_)         | | 
-        <br>
-        |   | |  _ __ | |__   _ _ __   __| | 
-        <br>
-        |   | | | '_ \|  __| | | '_ \ / _` | 
-        <br>
-        |  _| |_| |_) | |    | | | | | (_| | 
-        <br>
-        | |_____| .__/|_|    |_|_| |_|\__,_| 
-        <br>
-        |       | |                          
-        <br>
-        |       |_|                          
-        <br>
-        <?php
+        echo "|  _____       ______ _           _  ";
+        echo "<br>";
+        echo "| |_   _|     |  ____(_)         | | ";
+        echo "<br>";
+        echo "|   | |  _ __ | |__   _ _ __   __| |  ";
+        echo "<br>";
+        echo "|   | | | '_ \|  __| | | '_ \ / _` | ";
+        echo "<br>";
+        echo "|  _| |_| |_) | |    | | | | | (_| | ";
+        echo "<br>";
+        echo "| |_____| .__/|_|    |_|_| |_|\__,_| ";
+        echo "<br>";
+        echo "|       | |                          ";
+        echo "<br>";
+        echo "|       |_|                          ";
+        echo "<br>";
         echo "| Your ip is: ".$ip." (ipv4)";    //tell your ip
         echo "\r\n";
         echo "| The date and time now is: ".$date;
-        ?>
-        <br>
-        |-----------------------------------------------";
-        <br>
-        <form action='index.php' method='post' autocomplete='off'>
-        | IP <input type='text' name='ip'/>
-              <input type='submit' value='Search'/>
-        </form>
-        <?php
+        echo "<br>";
+        echo "|-----------------------------------------------";
+        echo "<br>";
+        echo "<form action='index.php' method='post' autocomplete='off'>";
+        echo "| IP <input type='text' name='ip'/>";
+        echo "      <input type='submit' value='Search'/>";
+        echo "</form>";
         if (isset($_POST['ip']) && !empty($_POST['ip'])) {
             $ip = $_POST['ip'];
         }
