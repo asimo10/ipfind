@@ -51,7 +51,7 @@
         echo " <form action='index.php' method='post' autocomplete='off'>";
         echo "    <p>IP <br><input type='text' class='button' name='ip'/></p>";
         echo "    <p><input type='submit' class='button' value='Search'/></p>";
-        echo " </form>"
+        echo " </form>";
         $ip = $_POST['ip'];
         $loc = file_get_contents('http://ip-api.com/json/'.$ip);
         $loc = str_replace('{', '<br>{<br>', $loc);
