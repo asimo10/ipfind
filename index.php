@@ -29,27 +29,27 @@
     }
         $date = date('Y-m-d H:i:s');                 //2012-03-06 17:33:07
         echo "|  _____       ______ _           _  ";
-        echo "<br>";
+        echo "\r\n";
         echo "| |_   _|     |  ____(_)         | | ";
-        echo "<br>";
-        echo "|   | |  _ __ | |__   _ _ __   __| |  ";
-        echo "<br>";
+        echo "\r\n";
+        echo "|   | |  _ __ | |__   _ _ __   __| | ";
+        echo "\r\n";
         echo "|   | | | '_ \|  __| | | '_ \ / _` | ";
-        echo "<br>";
+        echo "\r\n";
         echo "|  _| |_| |_) | |    | | | | | (_| | ";
-        echo "<br>";
+        echo "\r\n";
         echo "| |_____| .__/|_|    |_|_| |_|\__,_| ";
-        echo "<br>";
+        echo "\r\n";
         echo "|       | |                          ";
-        echo "<br>";
+        echo "\r\n";
         echo "|       |_|                          ";
-        echo "<br>";
+        echo "\r\n";
         echo "| Your ip is: ".$ip." (ipv4)";    //tell your ip
         echo "\r\n";
         echo "| The date and time now is: ".$date;
-        echo "<br>";
+        echo "\r\n";
         echo "|-----------------------------------------------";
-        echo "<br>";
+        echo "\r\n";
         echo "<form action='index.php' method='post' autocomplete='off'>";
         echo "| IP <input type='text' name='ip'/>";
         echo "      <input type='submit' value='Search'/>";
