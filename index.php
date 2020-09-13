@@ -47,9 +47,11 @@
         echo "| Your ip is: ".$ip." (ipv4)";    //tell your ip
         echo "\r\n";
         echo "| The date and time now is: ".$date;
+        echo "\r\n";
         echo "|-----------------------------------------------";
+        echo "\r\n";
         echo " <form action='index.php' method='post' autocomplete='off'>";
-        echo "    <p>IP <br><input type='text' class='button' name='ip'/></p>";
+        echo "    <p>IP <input type='text' class='button' name='ip'/></p>";
         echo "    <p><input type='submit' class='button' value='Search'/></p>";
         echo " </form>";
         $ip = $_POST['ip'];
