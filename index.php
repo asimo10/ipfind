@@ -3,7 +3,6 @@
 <head>
 <link rel="icon" href="https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/0b/43/c6/0b43c698-fdde-0599-06c0-ac35afd3d496/AppIcon-1x_U007emarketing-0-7-0-85-220.png/246x0w.png">
 <title>IpFind</title>
-<script language="JavaScript" src="script.js" async></script>
 </head>
     <body>
     <style>
@@ -28,7 +27,7 @@
     {
         $ip = $_SERVER['REMOTE_ADDR'];
     }
-        $date = date('Y-m-d H:i:s');                 //2012-03-06 17:33:07
+        $date = date('Y-m-d');                 //2012-03-06 17:33:07
         echo "|  _____       ______ _           _  ";
         echo "\r\n";
         echo "| |_   _|     |  ____(_)         | | ";
@@ -47,7 +46,7 @@
         echo "\r\n";
         echo "| Your ip is: ".$ip." (ipv4)";    //tell your ip
         echo "\r\n";
-        echo "| The date and time now is <div id='date'></div><div id='time'></div>";
+        echo "| The date today is ".$date;
         echo "\r\n";
         echo "|-----------------------------------------------";
         echo "\r\n";
